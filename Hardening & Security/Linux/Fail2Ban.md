@@ -25,4 +25,6 @@ sudo systemctl enable fail2ban
 
 # Source resources
 
+[Fail2Ban Documentation Manual](https://www.fail2ban.org/wiki/index.php/MANUAL_0_8)
+
 [How To Protect SSH With Fail2Ban on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-centos-7)
