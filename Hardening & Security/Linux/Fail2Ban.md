@@ -7,8 +7,18 @@ Fail2Ban should be available via the package manager of most linux systems
 sudo apt-get install fail2ban
 ```
 
-## Redhat
-Redhat requires the epel repository which contains more software and more up-to-date software
+### Configuration locations
+
+|term|description|
+|----|-----------|
+|filter	|a filter defines a regular expression which must match a pattern corresponding to a log-in failure or any other expression|
+|action	|an action defines several commands which are executed at different moments|
+|jail	|a jail is a combination of one filter and one or several actions. Fail2ban can handle several jails at the same time|
+|client	|refers to the script fail2ban-client|
+|server	|refers to the script fail2ban-server|
+
+
+## Redha|Redhat requires the epel repository which contains more software and more up-to-date software
 ```shell
 sudo yum install epel-release -y
 sudo apt-get install fail2ban
