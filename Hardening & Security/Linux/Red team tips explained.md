@@ -6,6 +6,8 @@
 
 Fail2Ban provides an automated way to block suspicious and brute-force logins to a system. This is done by reading log files on a given system and using different in-built and custom scripts to ban offending hosts / IPs. F2B is written in Python and should work on most linux systems.
 
+[More Fail2Ban information can be found in this link](Fail2Ban.md)
+
 ## PHP Hardening
 
 ## SETUID
@@ -16,8 +18,10 @@ Fail2Ban provides an automated way to block suspicious and brute-force logins to
 
 Linux will write specific logs to specific places under (normally) standard paths such as ```/var/log/```. System authentication logs can normally be found under `/var/log/auth.log` and `/var/log/secure`. Depending on the system there may more more logs or they may be in different places. 
 
-Besides the linux system authentication logs (which are normally part of PAM (pluggable authentication module) authentication). Many services may provide their own logs with authentication information inside them. 
+Besides the linux system authentication logs many services may provide their own logs with authentication information inside them.
 
+Redhat based systems will log authentication messages to `/var/log/secure`
+Debian based systems will log authentication messages to `/var/log/auth.log`
 
 ## Process Lists
 
