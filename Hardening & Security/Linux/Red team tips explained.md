@@ -17,6 +17,7 @@ PHP itself may not be insecure but many implementations of applications using PH
 
 - Binaries
 
+
 ## Authentication Logs
 
 Linux will write specific logs to specific places under (normally) standard paths such as ```/var/log/```. System authentication logs can normally be found under `/var/log/auth.log` and `/var/log/secure`. Depending on the system there may more more logs or they may be in different places. 
