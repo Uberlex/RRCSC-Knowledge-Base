@@ -15,7 +15,7 @@ PHP itself may not be insecure but many implementations of applications using PH
 
 ## SETUID / SUID / SGID / Sticky
 
-Special permissions can cause many different security holes. The filesystem should be enumerated and these special permissions should be validated. 
+Special permissions can cause many different security holes. The filesystem should be enumerated and these special permissions should be validated.
 
 [More SETUID information can be found in this link](setuid.md)
 
@@ -27,6 +27,8 @@ Besides the linux system authentication logs many services may provide their own
 
 Redhat based systems will log authentication messages to `/var/log/secure`
 Debian based systems will log authentication messages to `/var/log/auth.log`
+
+[More authentication log information can be found in this link](authentication logs.md)
 
 ## Process Lists
 
