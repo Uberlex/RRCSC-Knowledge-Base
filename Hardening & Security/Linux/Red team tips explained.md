@@ -72,6 +72,10 @@ Debian based systems will log authentication messages to `/var/log/auth.log`
 
 ## IPSTATE / NETSTAT / TCPview - Network and connection monitoring
 
+Monitoring connections to and from a linux system can help you determine if someone has breached your system or if you have some sort of malware calling home for instructions / data exfil
+
+[More information about network monitoring can be found in this link]](network monitoring.md)
+
 ## watch tripwire OSSec - File Integrity Logging
 
 ## watch / md5sum - Directory / Filesystem monitoring
