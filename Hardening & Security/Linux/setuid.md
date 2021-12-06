@@ -1,4 +1,4 @@
-# About SETUID
+# About SUID / SGID
 
 ## First understand linux permissions
 
@@ -66,16 +66,11 @@ If the `execute` permission should be set, add 1
 
 --------
 
-If you are not quite sure of the numerical / symbolic permissions on a file try the `stat` command
+## What is SUID / SGID
 
-```shell
-stat <FILENAME> | grep Access
-```
-
-## What is SETUID
 The setUID bit allows for a user to run a program as a different user. The user that the program runs as will be the owner of the file that has the SUID bit set.
 
-## How to identify SETUID
+## How to identify SUID / SGID
 
 Files with SUID set can be identified by looking at the file permissions.
 EG: `ls -l /usr/bin/passwd`
@@ -85,7 +80,8 @@ EG: `ls -l /usr/bin/passwd`
 ```
 
 Notice how the user permissions contain an `s` where `x` should be? If your terminal supports color than the file will normally also be red or be highlighted with red.
-[![Red Highlight of SUID file](../../.media/mfdsHlO.png)]()
+
+![Red Highlight of SUID file](../../.media/mfdsHlO.png)
 
 To find files with SUID you can run the following command.
 
@@ -93,7 +89,72 @@ To find files with SUID you can run the following command.
 sudo find <DIRECTORY> -user root -perm -4000 -exec ls -ldb {} \;
 ```
 
+## Sticky Bit
 
+### What is a sticky bit
+
+There is one other special permission to be aware of. The `t` or sticky bit permission. The sticky bit gets applied to directories. When applied the sticky bit prevents files contained in a sticky directory from being deleted by anyone other than the owner user/group or root
+
+### How to identify a sticky bit
+
+Directories with a `t` in place of the `other` `x` permission indicates that the directory has a sticky bit
+
+```shell
+ls -ld <DIRECTORY>
+```
+
+```shell
+drwxrwxrwt. 9 root root 4096 Dec  6 12:58 /tmp/
+```
+
+## Setting special permissions on a file
+
+You will use `chmod` again to modify special permissions.
+
+------
+
+Set special permissions using symbolic syntax
+
+```shell
+chmod g+s <FILE/DIRECTORY>
+
+chmod u+s <FILE/DIRECTORY>
+
+chmod +t <DIRECTORY>
+```
+
+-------
+
+Set special permissions using numerical syntax
+
+```shell
+chmod 4<PERMISSIONS> <FILE/DIRECTORY>
+
+chmod 2<PERMISSIONS> <FILE/DIRECTORY>
+
+chmod 1<PERMISSIONS> <FILE/DIRECTORY>
+
+chmod 0<PERMISSIONS> <FILE/DIRECTORY>
+```
+
+Start at 0
+
+SUID = 4
+
+SGID = 2
+
+Sticky = 1
+
+-------
+
+>If you are not quite sure of the numerical / symbolic permissions on a file try the `stat` command
+>
+>```shell
+>stat <FILENAME> | grep Access
+>```
+
+------
+------
 # Source Resources
 
 [GTFO BINS](https://gtfobins.github.io/)
