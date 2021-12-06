@@ -13,10 +13,11 @@ PHP itself may not be insecure but many implementations of applications using PH
 
 [More PHP information can be found in this link](php.md)
 
-## SETUID
+## SETUID / SUID / SGID / Sticky
 
-- Binaries
+Special permissions can cause many different security holes. The filesystem should be enumerated and these special permissions should be validated. 
 
+[More SETUID information can be found in this link](setuid.md)
 
 ## Authentication Logs
 
