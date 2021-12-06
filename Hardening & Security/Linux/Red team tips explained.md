@@ -25,6 +25,31 @@ Special permissions can cause many different security holes. The filesystem shou
 
 - lsattr
 
+## File Timestamps
+
+Files have timestamps for when they were created, accessed, and modified. Compare timestamps to look for suspicous dates. atime and mtime can both be changed while ctime is harder to change it is still possible.
+
+Change `atime` of a file.
+
+```shell
+touch -a --date="1988-02-15 01:00:17.547775198 +0300" <FILE>
+```
+
+Change `mtime` of a file.
+
+```shell
+ touch -m --date="2020-01-20 23:05:43.443117094 +0400" <FILE>
+```
+
+Change file date (shows with ls)
+
+```shell
+touch -d "-48 hour" <FILE>
+```
+
+Look into normal file timestamps EG: access/modify/change times being the same or not depending on if the file was edited/viewed/moved etc.
+
+
 ## Authentication Logs
 
 Linux will write specific logs to specific places under (normally) standard paths such as ```/var/log/```. System authentication logs can normally be found under `/var/log/auth.log` and `/var/log/secure`. Depending on the system there may more more logs or they may be in different places. 
