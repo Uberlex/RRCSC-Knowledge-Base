@@ -9,6 +9,9 @@ Fail2Ban provides an automated way to block suspicious and brute-force logins to
 [More Fail2Ban information can be found in this link](Fail2Ban.md)
 
 ## PHP Hardening
+PHP itself may not be insecure but many implementations of applications using PHP are. For instance lookup 'wordpress php vulnerabilities' and there will be many examples of bad implementation over the years. Expect issues to exist with any php.ini files. Inderstand the options and fix them.
+
+[More PHP information can be found in this link](php.md)
 
 ## SETUID
 
