@@ -49,6 +49,11 @@ touch -d "-48 hour" <FILE>
 
 Look into normal file timestamps EG: access/modify/change times being the same or not depending on if the file was edited/viewed/moved etc.
 
+If access / change are the same but modified is different the file may have been copied from another system
+
+If changed time is the newer time then the modification of the file is probably a permission / owner / attribute but not file contents.
+
+[MITRE - Indicator Removal on Host: Timestomp ](https://attack.mitre.org/techniques/T1070/006/)
 
 ## Authentication Logs
 
