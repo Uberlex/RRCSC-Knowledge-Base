@@ -64,7 +64,7 @@ Besides the linux system authentication logs many services may provide their own
 Redhat based systems will log authentication messages to `/var/log/secure`
 Debian based systems will log authentication messages to `/var/log/auth.log`
 
-[More authentication log information can be found in this link](authentication logs.md)
+[More authentication log information can be found in this link](authentication-logs.md)
 
 ## Process Lists
 
@@ -74,7 +74,7 @@ Debian based systems will log authentication messages to `/var/log/auth.log`
 
 Monitoring connections to and from a linux system can help you determine if someone has breached your system or if you have some sort of malware calling home for instructions / data exfil
 
-[More information about network monitoring can be found in this link]](network monitoring.md)
+[More information about network monitoring can be found in this link]](network-monitoring.md)
 
 ## watch tripwire OSSec - File Integrity Logging
 
