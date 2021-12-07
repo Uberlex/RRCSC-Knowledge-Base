@@ -12,7 +12,7 @@ Disable IPv6 >:(
 
 A service with a port on `LISTEN` will create an `ESTABLISHED` connection once a client connects to it. For example SSH will `LISTEN` on port 22 and when a connecton occurs you will see an `ESTABLISHED` connection
 
-The command `netstat -anp | grep 22` will output entries for both `LISTEN` and `ESTABLISHED` on port 22
+The command `netstat -anp | grep 22` will output entries for both `LISTEN` and `ESTABLISHED` on port 22. We see both since there is an SSH server running on the server and there is an active SSH session to a client.
 
 ```bash
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN 
