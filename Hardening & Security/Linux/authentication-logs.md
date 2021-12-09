@@ -16,7 +16,6 @@ Dec  6 12:00:00 <HOSTNAME> sshd[1146601]: pam_unix(sshd:session): session opened
 ```
 As you can see they are the same.
 
-```
 To be able to see all of your logs type the following commands
 ```
 less /var/log/auth.log
