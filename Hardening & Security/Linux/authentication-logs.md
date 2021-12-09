@@ -24,3 +24,11 @@ To find specific words or specific commands that were used use the following
 ```
 grep "root" less /var/log/auth.log 
 ```
+
+If you only know a part of a word you can run the following command
+
+```
+grep "r**t" less /var/log/auth.log 
+
+```
+The * act as a "Wildcard" and they can act as any letter or number. 
