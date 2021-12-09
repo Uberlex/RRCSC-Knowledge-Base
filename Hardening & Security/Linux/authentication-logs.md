@@ -15,5 +15,12 @@ Dec  6 12:00:00 <HOSTNAME> sshd[1146601]: Accepted password for root from <CONNE
 Dec  6 12:00:00 <HOSTNAME> sshd[1146601]: pam_unix(sshd:session): session opened for user root by (uid=0)
 
 ```
+To be able to see all of your logs type the following commands
+```
+less /var/log/auth.log
+```
+To find specific words or specific commands that were used use the following
+```
+grep "root" less /var/log/auth.log 
 
 As you can see they are the same.
