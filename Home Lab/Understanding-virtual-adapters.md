@@ -33,4 +33,23 @@ Recommended for:
 
 # Virtual Box
 
+## Manage Virual Box Networks / Adapters
+
+1. Open Virtual Box
+2. Go to 'File' > 'Host Network Manager...'
+
+In the Host Network Manager you will be able to configure virtual adapters and their related networks. You can configure a DHCP server for an adapter that will automaticly give VMs connected to that adapter an IP address. Otherwise you will need to manually assign IP addresses inside your VMs. 
+
+When you select 'Host-only Adapter' the settings here will be used.
+
+## Manage Virtual Box NAT Adapters
+
+1. Open Virtual Box
+2. Go to 'File' > 'Prefrences...'
+3. Click the 'Network' tab
+
+To configure port-forwarding, NAT addresses, and DHCP for Virtual Box NAT adapters use this. When you choose the 'NAT Network' option as your VM network adapter, it will use the settings that you configure here.
+
+For the 'NAT' adapter you can configure the port forwarding on the VM settings page.
+
 # VMware Workstation 
