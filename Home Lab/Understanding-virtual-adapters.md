@@ -52,4 +52,16 @@ To configure port-forwarding, NAT addresses, and DHCP for Virtual Box NAT adapte
 
 For the 'NAT' adapter you can configure the port forwarding on the VM settings page.
 
+
+## Assing Adapters to a Virtual Box VM
+
+Once you create a VM you can assign up to 4 network adapters to it. 
+
+1. Open Virtual Box
+2. Select a VM
+3. Click 'Settings'
+4. Click the 'Network' tab
+
+
+
 # VMware Workstation 
