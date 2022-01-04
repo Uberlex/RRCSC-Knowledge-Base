@@ -21,9 +21,19 @@ Special permissions can cause many different security holes. The filesystem shou
 
 ## Immutable file extended/extra file attributes
 
-- chatter
+- chatter: Modification of file attributes separate from standard permissions
+    -Function: Protect vital system files; unable to be modified or deleted for users
+    -CMD string depiction: chattr [RVf] [-v version] [mode] 
+        -'+': adding a selected attribute to a file with prior attributes
+        -'-': causes a selected attribute to be removed.
+        -'=': selected attributes become the only attributes a certain file can have stored and managed
 
 - lsattr
+
+Resources for Immutable Files:
+https://www.geeksforgeeks.org/chattr-command-in-linux-with-examples/
+https://support.cpanel.net/hc/en-us/articles/4402898526359-How-to-determine-if-a-file-or-directory-has-the-immutable-attribute-set
+https://www.tecmint.com/chattr-command-examples/
 
 ## File Timestamps
 
